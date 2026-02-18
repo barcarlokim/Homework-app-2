@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>숙제 앱 통합 v1+v2</title><link rel="stylesheet" href="./styles.css"/></head>
+<body>
+<main class="container">
+  <h1>숙제 관리 앱 (Desktop 통합버전)</h1>
+  <p>v1의 화면 흐름 + v2의 API/DB 구조를 합친 버전입니다.</p>
+  <div class="card-grid">
+    <section class="card"><h2>선생님</h2><button id="teacherLogin">선생님으로 로그인</button></section>
+    <section class="card"><h2>학생</h2><button id="studentLogin">학생으로 로그인</button></section>
+  </div>
+  <section class="card">
+    <h2>계정</h2>
+    <form id="authForm" class="form-grid">
+      <input id="name" placeholder="이름(회원가입시)"/>
+      <input id="username" placeholder="아이디" required/>
+      <input id="password" type="password" placeholder="비밀번호(8자 이상)" required/>
+      <div class="inline"><button type="button" id="registerBtn">회원가입</button><button type="button" id="loginBtn">로그인</button></div>
+    </form>
+  </section>
+</main>
+<script src="./app.js"></script>
+</body></html>

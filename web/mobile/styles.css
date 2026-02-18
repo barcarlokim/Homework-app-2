@@ -1,0 +1,10 @@
+body { margin: 0; background: #eef2ff; font-family: system-ui, -apple-system, sans-serif; }
+.mobile-wrap { padding: 14px; max-width: 480px; margin: 0 auto; }
+h1 { font-size: 22px; margin-bottom: 4px; }
+.hint { font-size: 13px; color: #334155; margin-top: 0; }
+.panel { background: white; border-radius: 12px; padding: 12px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+.panel h2 { margin-top: 0; font-size: 17px; }
+input, select, textarea, button { width: 100%; box-sizing: border-box; margin-bottom: 8px; font: inherit; border: 1px solid #cbd5e1; border-radius: 10px; padding: 12px; }
+button { background: #4338ca; color: white; border: none; }
+.row { display: flex; gap: 8px; }
+pre { min-height: 180px; background: #0f172a; color: #dbeafe; border-radius: 10px; padding: 10px; white-space: pre-wrap; }

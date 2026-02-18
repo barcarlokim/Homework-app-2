@@ -1,0 +1,165 @@
+:root {
+  color-scheme: light;
+  font-family: "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f2f6fb;
+  color: #1f2937;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px;
+  margin: 16px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.form-grid {
+  display: grid;
+  gap: 12px;
+}
+
+textarea,
+input,
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+button,
+.link-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.link-btn {
+  padding: 10px 14px;
+  border-radius: 8px;
+  width: auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.list li {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 12px;
+  background: #f8fafc;
+}
+
+.inline-btn {
+  width: auto;
+  margin-top: 8px;
+}
+
+.room-viewport {
+  perspective: 800px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.room {
+  width: 500px;
+  height: 320px;
+  position: relative;
+  transform-style: preserve-3d;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid #cbd5e1;
+  background: linear-gradient(#dde9f8, #eef5ff);
+}
+
+.wall {
+  position: absolute;
+  inset: 0;
+  height: 62%;
+  background: linear-gradient(180deg, #dbeafe 0%, #bfdbfe 100%);
+}
+
+.floor {
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  bottom: -35px;
+  height: 48%;
+  background: repeating-linear-gradient(
+    -30deg,
+    #c08457,
+    #c08457 20px,
+    #b87345 20px,
+    #b87345 40px
+  );
+  transform: rotateX(62deg);
+  transform-origin: bottom;
+}
+
+.desk {
+  position: absolute;
+  bottom: 70px;
+  left: 52%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 70px;
+  border-radius: 8px;
+  background: #9a5b33;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.place-btn {
+  width: auto;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  z-index: 3;
+}
+
+.hidden {
+  display: none;
+}

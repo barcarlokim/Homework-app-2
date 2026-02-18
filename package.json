@@ -1,0 +1,11 @@
+{
+  "name": "homework-app-2",
+  "version": "1.0.0",
+  "description": "Teacher-student homework app with file DB REST API",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "check": "node --check server/index.js && node --check web/desktop/app.js && node --check web/mobile/app.js"
+  }
+}

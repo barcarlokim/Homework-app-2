@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>피드백 작성</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header-row">
+      <h1>별점 & 피드백</h1>
+      <a href="teacher.html" class="link-btn">선생님 페이지로 돌아가기</a>
+    </header>
+
+    <section class="card">
+      <h2>확인한 제출물</h2>
+      <div id="submissionDetail"></div>
+    </section>
+
+    <section class="card">
+      <h2>별점 매기기 및 피드백 작성</h2>
+      <form id="feedbackForm" class="form-grid">
+        <label>별점 (1~5)
+          <input type="number" id="rating" min="1" max="5" required />
+        </label>
+        <label>피드백
+          <textarea id="feedbackText" required placeholder="좋았던 점과 개선할 점을 적어주세요."></textarea>
+        </label>
+        <button type="submit">피드백 저장</button>
+      </form>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
