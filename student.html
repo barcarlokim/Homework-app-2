@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>학생 대시보드</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header-row">
+      <h1>학생 대시보드</h1>
+      <div class="header-actions">
+        <a href="decorate.html" class="link-btn">내 공간 꾸미기</a>
+        <a href="index.html" class="link-btn">로그아웃</a>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>2) 제안된 과제 확인하기</h2>
+      <p>제안된 숙제 중 하나를 골라 제출 페이지로 이동하세요.</p>
+      <ul id="studentHomeworkList" class="list"></ul>
+    </section>
+
+    <section class="card">
+      <h2>선생님 피드백 확인</h2>
+      <ul id="feedbackList" class="list"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

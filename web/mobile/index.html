@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Homework App - Mobile</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="mobile-wrap">
+    <h1>Homework App (Mobile)</h1>
+    <p class="hint">iOS/Android 웹뷰 확장용 모바일 버전</p>
+
+    <div class="panel">
+      <h2>인증</h2>
+      <input id="name" placeholder="이름(회원가입 시)" />
+      <select id="role">
+        <option value="teacher">선생님</option>
+        <option value="student">학생</option>
+      </select>
+      <input id="username" placeholder="아이디" />
+      <input id="password" type="password" placeholder="비밀번호" />
+      <div class="row">
+        <button id="register">가입</button>
+        <button id="login">로그인</button>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>빠른 작업</h2>
+      <button id="me">내 정보</button>
+      <button id="homeworks">과제 조회</button>
+      <button id="submissions">제출 조회</button>
+      <button id="schema">DB 권장 스키마</button>
+    </div>
+
+    <div class="panel">
+      <h2>생성/제출/피드백</h2>
+      <input id="homeworkId" placeholder="과제ID 또는 제출ID" />
+      <textarea id="text1" placeholder="내용"></textarea>
+      <input id="countOrRating" type="number" placeholder="횟수 또는 별점" />
+      <input id="deadline" type="date" />
+      <textarea id="text2" placeholder="메시지 또는 피드백"></textarea>
+      <button id="createHomework">과제 생성(선생님)</button>
+      <button id="submitHomework">과제 제출(학생)</button>
+      <button id="createFeedback">피드백 저장(선생님)</button>
+    </div>
+
+    <pre id="result"></pre>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
